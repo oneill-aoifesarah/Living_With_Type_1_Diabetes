@@ -87,12 +87,11 @@ main {
     background-color: #fefcf5;
     /* Make the main element take up excess space so as to push footer down */
     flex: 1 0 auto;
-    margin-top: 80px;
-    display: inline-block;
+    margin-top: 122px;
 }
 
 /* Footer */
 footer {
     background-color: #4dacc79a;
-    color: #fefcf5;
+    
 }
