@@ -38,7 +38,7 @@ h1 {
     font-family: 'poppins', sans-serif;
     text-align: center;
     text-transform: none;
-    font-size: 40px;
+    font-size: 28px;
     letter-spacing: 2px;
     color: #141f24;
 }
@@ -54,6 +54,30 @@ h1 {
 }
 .active {
     border-bottom: 1px solid #141f24;
+}
+
+/* Navbar styles with dropdown toggle */
+nav {
+    position: absolute;
+    background-color: #c8d8e4;
+    width: 100%;
+    left: 0;
+    padding: 0 1rem;
+    box-shadow: 0 3px 3px #141f24;
+    display: none;
+}
+
+/* Nav toggle */
+#nav-toggle:checked~nav {
+    display: block;
+}
+
+#nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    font-size: 1rem;
 }
 
 /* Main content */
