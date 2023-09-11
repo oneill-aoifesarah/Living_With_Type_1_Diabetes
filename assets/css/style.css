@@ -1,3 +1,10 @@
+/* Asterisk wildcard selector used to override the browsers' default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 /* Header */
 header {
     background-color: #c8d8e4;
@@ -10,5 +17,5 @@ main {
 
 /* Footer */
 footer {
-    background-color: #28758ac5;
+    background-color: #28758aac;
 }
