@@ -19,7 +19,7 @@ body {
 
 /* Header */
 header {
-    background-color: #c8d8e4;
+    background-color: #4dacc79a;
     position: fixed;
     width: 100%;
     padding: 0 1rem;
@@ -41,7 +41,7 @@ h1 {
     text-transform: none;
     font-size: 27px;
     letter-spacing: 2px;
-    color: #141f24;
+    color: #fefcf5;
 }
 
 #menu {
@@ -60,7 +60,7 @@ h1 {
 /* Navbar styles with dropdown toggle */
 nav {
     position: absolute;
-    background-color: #c8d8e4;
+    background-color: #4dacc79a;
     width: 100%;
     left: 0;
     padding: 0 1rem;
@@ -83,14 +83,16 @@ nav {
 }
 
 /* Main content */
-#main {
-    background-color:1px solid #141f24;
+main {
+    background-color: #fefcf5;
     /* Make the main element take up excess space so as to push footer down */
     flex: 1 0 auto;
-    margin-top: 100px;
+    margin-top: 80px;
+    display: inline-block;
 }
 
 /* Footer */
 footer {
-    background-color: #28758aac;
+    background-color: #4dacc79a;
+    color: #fefcf5;
 }
