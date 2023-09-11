@@ -1,8 +1,20 @@
+/* Google Fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Nunito+Sans:opsz,wght@6..12,300&family=Poppins:wght@300&display=swap');
+
 /* Asterisk wildcard selector used to override the browsers' default styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+/* General styles*/
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* General project styles */
+    color: #153a4b;
+    font-family: 'nunito sans', sans-serif;
 }
 
 /* Header */
