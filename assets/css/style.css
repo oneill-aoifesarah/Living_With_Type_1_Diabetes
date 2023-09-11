@@ -27,6 +27,7 @@ header {
     display: flex;
     align-items: baseline;
     justify-content: space-between;
+    z-index: 100;
 }
 
 header a {
@@ -38,7 +39,7 @@ h1 {
     font-family: 'poppins', sans-serif;
     text-align: center;
     text-transform: none;
-    font-size: 28px;
+    font-size: 27px;
     letter-spacing: 2px;
     color: #141f24;
 }
@@ -65,6 +66,7 @@ nav {
     padding: 0 1rem;
     box-shadow: 0 3px 3px #141f24;
     display: none;
+    top:100%;
 }
 
 /* Nav toggle */
@@ -83,6 +85,9 @@ nav {
 /* Main content */
 #main {
     background-color:1px solid #141f24;
+    /* Make the main element take up excess space so as to push footer down */
+    flex: 1 0 auto;
+    margin-top: 100px;
 }
 
 /* Footer */
