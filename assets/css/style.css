@@ -20,6 +20,21 @@ body {
 /* Header */
 header {
     background-color: #c8d8e4;
+    position: fixed;
+    width: 100%;
+    padding: 0 1rem;
+    box-shadow: 0 2px 2px #153a4b;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+h1 {
+    font-family: 'poppins', sans-serif;
+    text-align: center;
+    text-transform: none;
+    font-size: 40px;
+    letter-spacing: 2px;
+    color: #141f24;
 }
 
 /* Main content */
