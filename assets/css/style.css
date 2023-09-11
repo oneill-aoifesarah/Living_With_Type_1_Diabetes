@@ -43,9 +43,22 @@ h1 {
     color: #141f24;
 }
 
+#menu {
+    font-size: medium;
+    letter-spacing: 2px;
+    list-style-type: none;
+}
+
+#menu >li {
+    margin-bottom: 0.5em;
+}
+.active {
+    border-bottom: 1px solid #141f24;
+}
+
 /* Main content */
-main {
-    background-color: #f2f2f2;
+#main {
+    background-color:1px solid #141f24;
 }
 
 /* Footer */
