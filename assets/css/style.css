@@ -28,6 +28,12 @@ header {
     align-items: baseline;
     justify-content: space-between;
 }
+
+header a {
+    text-decoration: none;
+    color: inherit;
+}
+
 h1 {
     font-family: 'poppins', sans-serif;
     text-align: center;
