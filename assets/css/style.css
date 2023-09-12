@@ -142,7 +142,7 @@ main {
  }
 /* Media Query for laptop and desktop (992px and up) */
     @media (min-width: 992px) {
-    
+/* Push main content down on laptop and desktop screen */
     main {margin-top: 101px;}
 
     #logo {
