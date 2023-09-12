@@ -13,17 +13,17 @@ body {
     flex-direction: column;
     min-height: 100vh;
     /* General project styles */
-    color: #153a4b;
-    font-family: 'nunito sans', sans-serif;
+    color: #1c4e65;
+    font-family: 'Nunito Sans', sans-serif;
 }
 
 /* Header */
 header {
-    background-color: #4dacc79a;
+    background-color: #70bdd2;
     position: fixed;
     width: 100%;
     padding: 0 1rem;
-    box-shadow: 0 2px 2px #153a4b;
+    box-shadow: 0 2px 2px #1c4e65;
     display: flex;
     align-items: baseline;
     justify-content: space-between;
@@ -37,9 +37,8 @@ header a {
 
 h1 {
     font-family: 'poppins', sans-serif;
-    text-align: center;
     text-transform: none;
-    font-size: 27px;
+    font-size: 20px;
     letter-spacing: 2px;
     color: #fefcf5;
 }
@@ -51,21 +50,22 @@ h1 {
 }
 
 #menu >li {
-    margin-bottom: 0.5em;
+    margin: 1em 0 1em;
+    color: #fefcf5;
 }
 
 .active {
-    border-bottom: 1px solid #141f24;
+    border-bottom: 1px solid #1c4e65;
 }
 
 /* Navbar styles with dropdown toggle */
 nav {
     position: absolute;
-    background-color: #4dacc79a;
+    background-color: #70bdd2;
     width: 100%;
     left: 0;
     padding: 0 1rem;
-    box-shadow: 0 3px 3px #141f24;
+    box-shadow: 0 2px 2px #1c4e65;
     display: none;
     top:100%;
 }
@@ -80,7 +80,7 @@ nav {
 }
 
 .nav-toggle-label {
-    font-size: 1rem;
+    font-size: 1.3rem;
 }
 
 /* Main content */
@@ -88,7 +88,7 @@ main {
     background-color: #fefcf5;
     /* Make the main element take up excess space so as to push footer down */
     flex: 1 0 auto;
-    margin-top: 122px;
+    margin-top: 60px;
 }
 
 /* Footer */
@@ -98,7 +98,7 @@ main {
     display: flex;
     justify-content: space-evenly;
     list-style-type: none;
-    background-color: #4dacc79a;
+    background-color: #70bdd2;
 }
 
 #social-networks i {
@@ -106,45 +106,54 @@ main {
     padding: 5%;
 }
 
-/* Media query: tablets and larger (768px and up) */
-@media screen and (min-width: 768px) {
-
-    /* Header */
-    nav {
-        display: block;
-        position: relative;
-        box-shadow: none;
-        width: fit-content;
-        padding-right: 1rem;
-    }
-
+/* Media Query for tablet and iPad (768px and up) */
+    @media (min-width: 768px) {
+/* Push main content down on tablet and ipad screen */
+    main {margin-top: 92px;}
+ 
     #menu {
-        display: flex;
+    display: flex;
     }
-
+    
     #menu>li {
-        padding-left: 1rem;
+    font-size: 20px;
+    color: #fefcf5;
+    padding-left: 1rem;
+    }
+    
+    nav {
+    display: block;
+    position: relative;
+    box-shadow: none;
+    width:fit-content
     }
 
     .nav-toggle-label {
-        display: none;
+    display: none;
     }
+    
+    #logo {
+    font-size: 155%;
+    line-height: 60px;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    padding-left: 0.5rem;
+   }
+ }
+/* Media Query for laptop and desktop (992px and up) */
+    @media (min-width: 992px) {
+    
+    main {margin-top: 101px;}
 
     #logo {
-        font-size: 280%;
-        line-height: 75px;
-        margin: 0 0.5rem;
+        font-size: 200%;
+    }
+    
+    #menu a:hover {
+        border-bottom:1px solid #1c4e65;
     }
 
-    /* Main content */
-    main {
-        /* Push main content down to accommodate larger header */
-        margin-top: 79px;
+    #menu>li {
+        font-size: 30px;
     }
 }
-
-/* Large devices (laptops and desktops, 992px and up) */
-@media screen and (min-width: 992px) {
-    #menu a:hover {
-        border-bottom: 1px solid #3a3a3a;
-    }
