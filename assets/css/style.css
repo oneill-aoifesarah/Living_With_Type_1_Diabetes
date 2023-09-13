@@ -17,6 +17,15 @@ body {
     font-family: 'Nunito Sans', sans-serif;
 }
 
+h1, h2{
+    font-family: 'poppins', sans-serif;
+    text-transform: none;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: #fefcf5;
+}
+
+
 /* Header */
 header {
     background-color: #70bdd2;
@@ -35,12 +44,10 @@ header a {
     color: inherit;
 }
 
-h1 {
-    font-family: 'poppins', sans-serif;
-    text-transform: none;
-    font-size: 20px;
-    letter-spacing: 2px;
-    color: #fefcf5;
+#overview-text {
+    background-color: rgba(206, 207, 201, 255);
+    text-align: center;
+    padding:5px;
 }
 
 #menu {
