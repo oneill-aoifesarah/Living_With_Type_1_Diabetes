@@ -95,6 +95,7 @@ main {
     /* Make the main element take up excess space so as to push footer down */
     flex: 1 0 auto;
     margin-top: 61px;
+    background-color: #fefcf5;
 }
 
 /* Hero section */
@@ -104,6 +105,28 @@ main {
     background: url("../images/SupportGroup.webp") no-repeat center/cover;
     
 }
+
+/* Homepage */
+
+#about-us {
+    padding: 0 1rem;
+    margin: 10px 0;
+}
+
+#about-us p {
+    letter-spacing: 1px;
+    width: 100%;
+    margin: 20px 0;
+
+}
+#services {
+    list-style-position: inside;
+    letter-spacing: 1px;
+    width: 100%;
+    margin: 10px 0;
+}
+
+
 /* Footer */
 #social-networks {
     text-align: center;
