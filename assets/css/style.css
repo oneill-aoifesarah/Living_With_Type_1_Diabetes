@@ -25,6 +25,12 @@ h1, h2{
     color: #fefcf5;
 }
 
+h4 {
+    border-bottom: 1px solid #1c4e65;
+    display:inline-block;
+    padding-bottom:2px;
+}
+
 
 /* Header */
 header {
@@ -127,6 +133,7 @@ main {
 }
 
 /* Homepage: Advice and Support */
+
 #advice-support {
     padding: 0 1rem;
     margin: 10px 0;
@@ -134,14 +141,14 @@ main {
 
 #advice p{
     letter-spacing: 1px;
-    width: 100%;
-    margin: 20px 0;
+    width:100%;
+    margin: 5px 5px 10px;
 }
 
 #support p{
     letter-spacing: 1px;
-    width: 100%;
-    margin: 20px 0;
+    width:100%;
+    margin: 5px 5px 10px;
 }
 
 /* Footer */
