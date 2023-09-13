@@ -31,6 +31,11 @@ h4 {
     padding-bottom:2px;
 }
 
+.container {
+    border: 1px solid #ccc;
+    /* Replace #ccc with the color of your choice */
+}
+
 
 /* Header */
 header {
@@ -126,9 +131,7 @@ main {
 
 }
 #services {
-    list-style-position: inside;
-    letter-spacing: 1px;
-    width: 100%;
+    padding: 0 1rem;
     margin: 10px 0;
 }
 
@@ -150,6 +153,9 @@ main {
     width:100%;
     margin: 5px 5px 10px;
 }
+
+/* Advice Page */
+/* Support Page */
 
 /* Footer */
 #social-networks {
@@ -205,6 +211,12 @@ main {
    }
  }
 
+ @media (max-width: 768px) {
+     .grid-container {
+         grid-template-columns: 1fr;
+         /* Single column layout */
+     }
+ }
 /* Media Query for laptop and desktop (992px and up) */
     @media (min-width: 992px) {
 /* Push main content down on laptop and desktop screen */
