@@ -25,15 +25,17 @@ h1, h2{
     color: #fefcf5;
 }
 
+h3 {
+    font-family: 'Nunito Sans', sans-serif;
+    letter-spacing: 1px;
+    width: 100%;
+    margin-bottom: 10px;
+    }
+
 h4 {
     border-bottom: 1px solid #1c4e65;
     display:inline-block;
     padding-bottom:2px;
-}
-
-.container {
-    border: 1px solid #ccc;
-    /* Replace #ccc with the color of your choice */
 }
 
 
@@ -117,41 +119,32 @@ main {
     
 }
 
-/* Homepage: About Us */
+/* Homepage */
 
-#about-us {
+#overview {
     padding: 0 1rem;
     margin: 10px 0;
 }
 
-#about-us p {
+#overview p {
     letter-spacing: 1px;
     width: 100%;
     margin: 20px 0;
+}
 
+#advice-suppport {
+    padding: 0 1rem;
+    margin: 10px 0;
+}
+
+#advice-support p {
+    letter-spacing: 1px;
+    width: 100%;
+    margin: 20px 0;
 }
 #services {
     padding: 0 1rem;
     margin: 10px 0;
-}
-
-/* Homepage: Advice and Support */
-
-#advice-support {
-    padding: 0 1rem;
-    margin: 10px 0;
-}
-
-#advice p{
-    letter-spacing: 1px;
-    width:100%;
-    margin: 5px 5px 10px;
-}
-
-#support p{
-    letter-spacing: 1px;
-    width:100%;
-    margin: 5px 5px 10px;
 }
 
 /* Advice Page */
