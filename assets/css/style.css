@@ -105,7 +105,7 @@ nav {
 
 /* Main content */
 main {
-    /* Make the main element take up excess space so as to push footer down */
+/* Make the main element take up excess space so as to push footer down */
     flex: 1 0 auto;
     margin-top: 61px;
     background-color: #fefcf5;
@@ -115,28 +115,22 @@ main {
 #hero {
     height: 350px;
     width:100%;
-    background: url("../images/SupportGroup.webp") no-repeat center/cover;
-    
+    background: url("../images/SupportGroup.webp") no-repeat center/cover; 
 }
-
 /* Homepage */
-
 #overview {
     padding: 0 1rem;
     margin: 10px 0;
 }
-
 #overview p {
     letter-spacing: 1px;
     width: 100%;
     margin: 20px 0;
 }
-
 #advice-suppport {
     padding: 0 1rem;
     margin: 10px 0;
 }
-
 #advice-support p {
     letter-spacing: 1px;
     width: 100%;
@@ -146,10 +140,10 @@ main {
     padding: 0 1rem;
     margin: 10px 0;
 }
-
 /* Advice Page */
-/* Support Page */
 
+
+/* Support Page */
 /* Footer */
 #social-networks {
     text-align: center;
@@ -159,70 +153,58 @@ main {
     list-style-type: none;
     background-color: #70bdd2;
 }
-
 #social-networks i {
     font-size: 100%;
     padding: 5%;
 }
  /* Media Query for smaller devices (375px and below) */
- @media (min-width: 375px) {
+    @media (min-width: 375px) {
  /* Push main content down on smaller devices */
     main {margin-top:30px;}
  }
 /* Media Query for tablet and iPad (768px and up) */
     @media (min-width: 768px) {
 /* Push main content down on tablet and ipad screen */
-    main {margin-top: 92px;}
- 
+    main {
+    margin-top: 92px;
+    }
     #menu {
     display: flex;
     }
-    
     #menu>li {
     font-size: 20px;
     color: #fefcf5;
     padding-left: 1rem;
     }
-    
     nav {
     display: block;
     position: relative;
     box-shadow: none;
     width:fit-content
     }
-
     .nav-toggle-label {
     display: none;
     }
-    
     #logo {
     font-size: 155%;
     line-height: 60px;
     padding-bottom: 1rem;
     padding-top: 1rem;
     padding-left: 0.5rem;
-   }
- }
-
- @media (max-width: 768px) {
-     .grid-container {
-         grid-template-columns: 1fr;
-         /* Single column layout */
-     }
+    }
  }
 /* Media Query for laptop and desktop (992px and up) */
-    @media (min-width: 992px) {
+@media (min-width: 992px) {
 /* Push main content down on laptop and desktop screen */
-    main {margin-top: 101px;}
-
+    main {
+    margin-top: 101px;
+    }
     #logo {
-        font-size: 200%;
+    font-size: 200%;
     }
-    
     #menu a:hover {
-        border-bottom:1px solid #1c4e65;
+    border-bottom:1px solid #1c4e65;
     }
-
     #menu>li {
         font-size: 30px;
     }
