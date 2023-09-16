@@ -438,4 +438,11 @@ button {
     #menu>li {
         font-size: 30px;
     }
+    /* Form */
+    #signup-form {
+        padding-left: 4rem;
+        padding-right: 4rem;
+        padding-bottom: 3rem;
+        margin-top: 3rem;
+        }
 }
