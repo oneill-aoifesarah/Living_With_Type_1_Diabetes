@@ -141,9 +141,30 @@ main {
     margin: 10px 0;
 }
 /* Advice Page */
+.video_container{position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+}
 
+.wrapped_video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
 
+.three-column-grid {
+    display:block;
+    border:#fefcf5
+}
+/*columns*/
+.three-column-grid>*{
+    padding: 1rem;
+}
 /* Support Page */
+/* styles and formats for background image and form layout*/
 #signup-form {
     color: #ffffff;
     background-image: url("../images/background-support.webp");
@@ -188,9 +209,8 @@ input[type="text"], [type="email"] {
     margin: auto;
     align-items: center;
     box-sizing: border-box;
-
 }
-
+/* format for the submit button of the form */
 button {
     border: solid #70bdd2;
     background-color:#4d77c6;
@@ -199,7 +219,82 @@ button {
     width: 55%;
     padding: 5px;
 }
- 
+/* details of peer support groups */
+ .container {
+     display: flex;
+     flex-direction: column;
+ }
+
+ .cork {
+     flex: 0.5;
+     height: 300px;
+     background-color: #dfa2df;
+     border: solid #70bdd2;
+     padding: 1px 10px 10px;
+     display: block;
+     margin-right: 30px;
+     margin-left:30px;
+     margin-bottom: 10px;
+     border-radius: 15px;
+    
+ }
+
+ .cork h3{
+    text-align: center;
+    color: #ffffff;
+ }
+ .cork p{
+    text-align: center;
+    color: #182492;
+    letter-spacing: 1px;
+ }
+
+ .galway {
+     flex: 0.5;
+     height: 300px;
+     background-color: #b9a4e8;
+     border: solid #70bdd2;
+     padding: 1px 10px 10px;
+     display: block;
+     margin-right:30px;
+     margin-left:30px;
+     margin-bottom: 10px;
+    border-radius: 15px;  
+ }
+.galway h3 {
+    text-align: center;
+    color: #ffffff;
+}
+
+.galway p {
+    text-align: center;
+    color: #182492;
+    letter-spacing: 1px;
+}
+
+ .dublin {
+     flex: 0.5;
+     height: 300px;
+     background-color: #5cbaf4;
+     border: solid #70bdd2;
+     padding: 1px 10px 10px;
+     display: block;
+     margin-right:30px;
+     margin-left: 30px;
+     margin-bottom: 10px;
+     border-radius: 15px;
+ }
+
+.dublin h3{
+    text-align: center;
+    color: #ffffff;
+}
+
+.dublin p{
+    text-align: center;
+    color: #182492;
+    letter-spacing: 1px;
+}
  /* Footer */
 #social-networks {
     text-align: center;
@@ -255,8 +350,23 @@ button {
     position: center;
     padding-left: 4rem;
     padding-right: 4rem; 
+    padding-bottom: 3rem;
    }
- }
+ 
+   .container {
+    position: center;
+    padding-left: 4rem;
+    padding-right: 4rem;
+   }
+
+ /* columns for advice section */
+   .three-column-grid{
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    }
+
+   }
 /* Media Query for laptop and desktop (992px and up) */
 @media (min-width: 992px) {
 /* Push main content down on laptop and desktop screen */
