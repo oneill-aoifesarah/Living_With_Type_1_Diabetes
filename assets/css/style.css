@@ -115,7 +115,7 @@ main {
 #hero {
     height: 350px;
     width:100%;
-    background: url("../images/SupportGroup.webp") no-repeat center/cover; 
+    background: url("../images/supportgroup.webp") no-repeat center/cover; 
 }
 /* Homepage */
 #overview {
@@ -144,7 +144,63 @@ main {
 
 
 /* Support Page */
-/* Footer */
+#signup-form {
+    color: #ffffff;
+    background-image: url("../images/background-support.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: content-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1px 10px 10px ;
+}
+
+#signup-form>h2 {
+    color: #000000;
+    background-color: #dcbfd7a5;
+    width: 100%;
+    text-align: center;
+    border-bottom: none;
+    padding:8px;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    color: #000000;
+    background-color: #dcbfd7a5;
+}
+input {
+    color: #000000;
+    width: 100%;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    padding:6px;
+}
+
+input[type="text"], [type="email"] {
+    border: solid #70bdd2;
+    color: #000000;
+    width:55%;
+    margin: auto;
+    align-items: center;
+    box-sizing: border-box;
+
+}
+
+button {
+    border: solid #70bdd2;
+    background-color:#4d77c6;
+    color:#ffffff;
+    display: inline-block;
+    width: 55%;
+    padding: 5px;
+}
+ 
+ /* Footer */
 #social-networks {
     text-align: center;
     padding: 20px 0;
@@ -159,6 +215,7 @@ main {
 }
  /* Media Query for smaller devices (375px and below) */
     @media (min-width: 375px) {
+
  /* Push main content down on smaller devices */
     main {margin-top:30px;}
  }
@@ -192,6 +249,13 @@ main {
     padding-top: 1rem;
     padding-left: 0.5rem;
     }
+
+   /* Form */ 
+   #signup-form {
+    position: center;
+    padding-left: 4rem;
+    padding-right: 4rem; 
+   }
  }
 /* Media Query for laptop and desktop (992px and up) */
 @media (min-width: 992px) {
