@@ -38,6 +38,15 @@ h4 {
     padding-bottom:2px;
 }
 
+ul {
+    margin: 0;
+    padding: 20px;
+    list-style-type: disc;
+}
+
+li {
+    margin-bottom: 10px;
+}
 
 /* Header */
 header {
@@ -157,11 +166,24 @@ main {
 
 .three-column-grid {
     display:block;
-    border:#fefcf5
 }
 /*columns*/
 .three-column-grid>*{
     padding: 1rem;
+    box-sizing: border-box;
+    border: 1px solid #70bdd2;
+    border-spacing: 5px;
+}
+.column h3{
+    text-align: center;
+}
+.column>ul>li{
+    font-size: medium;
+    letter-spacing: 2px
+}
+.column{
+    margin:10px;
+    background-color: #dae3f3a5;
 }
 /* Support Page */
 /* styles and formats for background image and form layout*/
