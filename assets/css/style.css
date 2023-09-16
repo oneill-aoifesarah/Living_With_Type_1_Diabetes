@@ -1,5 +1,5 @@
 /* Google Fonts import */
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Nunito+Sans:opsz,wght@6..12,300&family=Poppins:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Nunito+Sans:opsz,wght@6..12,300&family=Poppins:wght@300&display=swap");
 
 /* Asterisk wildcard selector used to override the browsers' default styles */
 * {
@@ -7,6 +7,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 /* General styles*/
 body {
     display: flex;
@@ -14,11 +15,12 @@ body {
     min-height: 100vh;
     /* General project styles */
     color: #1c4e65;
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: "Nunito Sans", sans-serif;
 }
 
-h1, h2{
-    font-family: 'poppins', sans-serif;
+h1,
+h2 {
+    font-family: "poppins", sans-serif;
     text-transform: none;
     font-size: 20px;
     letter-spacing: 2px;
@@ -26,16 +28,16 @@ h1, h2{
 }
 
 h3 {
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: "Nunito Sans", sans-serif;
     letter-spacing: 1px;
     width: 100%;
     margin-bottom: 10px;
-    }
+}
 
 h4 {
     border-bottom: 1px solid #1c4e65;
-    display:inline-block;
-    padding-bottom:2px;
+    display: inline-block;
+    padding-bottom: 2px;
 }
 
 ul {
@@ -53,23 +55,17 @@ header {
     background-color: #70bdd2;
     position: fixed;
     width: 100%;
-    padding: 0 1rem;
+    padding: 1 1rem;
     box-shadow: 0 2px 2px #1c4e65;
     display: flex;
     align-items: baseline;
     justify-content: space-between;
-    z-index: 100;
+    z-index: 101;
 }
 
 header a {
     text-decoration: none;
     color: inherit;
-}
-
-#overview-text {
-    background-color: rgba(206, 207, 201, 255);
-    text-align: center;
-    padding:5px;
 }
 
 #menu {
@@ -78,7 +74,7 @@ header a {
     list-style-type: none;
 }
 
-#menu >li {
+#menu>li {
     margin: 1em 0 1em;
     color: #fefcf5;
 }
@@ -96,7 +92,7 @@ nav {
     padding: 0 1rem;
     box-shadow: 0 2px 2px #1c4e65;
     display: none;
-    top:100%;
+    top: 100%;
 }
 
 /* Nav toggle */
@@ -114,7 +110,7 @@ nav {
 
 /* Main content */
 main {
-/* Make the main element take up excess space so as to push footer down */
+    /* Make the main element take up excess space so as to push footer down */
     flex: 1 0 auto;
     margin-top: 61px;
     background-color: #fefcf5;
@@ -123,32 +119,27 @@ main {
 /* Hero section */
 #hero {
     height: 350px;
-    width:100%;
-    background: url("../images/supportgroup.webp") no-repeat center/cover; 
+    width: 100%;
+    background: url("../images/supportgroup.webp") no-repeat center/cover;
 }
+
 /* Homepage */
 #overview {
-    padding: 0 1rem;
-    margin: 10px 0;
+    padding: 0;
+    margin: 0;
 }
+
 #overview p {
     letter-spacing: 1px;
     width: 100%;
     margin: 20px 0;
 }
-#advice-suppport {
-    padding: 0 1rem;
-    margin: 10px 0;
-}
-#advice-support p {
-    letter-spacing: 1px;
-    width: 100%;
-    margin: 20px 0;
-}
+
 #services {
     padding: 0 1rem;
     margin: 10px 0;
 }
+
 .responsive_map {
     overflow: hidden;
     padding-bottom: 56.25%;
@@ -162,15 +153,16 @@ main {
     height: 100%;
     width: 100%;
     position: absolute;
-
 }
+
 /* Advice Page */
-.video_container{position: relative;
+.video_container {
+    position: relative;
     overflow: hidden;
     padding-top: 56.25%;
 }
 
-.wrapped_video{
+.wrapped_video {
     position: absolute;
     top: 0;
     left: 0;
@@ -180,26 +172,32 @@ main {
 }
 
 .three-column-grid {
-    display:block;
+    display: block;
 }
+
 /*columns*/
-.three-column-grid>*{
+.three-column-grid>* {
     padding: 1rem;
     box-sizing: border-box;
-    border: 1px solid #70bdd2;
+    border: 2px solid #06c9ff;
     border-spacing: 5px;
 }
-.column h3{
+
+.column h3 {
     text-align: center;
 }
-.column>ul>li{
+
+.column>ul>li {
     font-size: medium;
-    letter-spacing: 2px
+    letter-spacing: 2px;
 }
-.column{
-    margin:10px;
-    background-color: #dae3f3a5;
+
+.column {
+    margin: 10px;
+    background-color: #fdca006c;
+    border-radius: 15px;
 }
+
 /* Support Page */
 /* styles and formats for background image and form layout*/
 #signup-form {
@@ -212,7 +210,7 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 1px 10px 10px ;
+    padding: 1px 10px 10px;
 }
 
 #signup-form>h2 {
@@ -221,7 +219,7 @@ main {
     width: 100%;
     text-align: center;
     border-bottom: none;
-    padding:8px;
+    padding: 8px;
 }
 
 label {
@@ -230,74 +228,79 @@ label {
     color: #000000;
     background-color: #dcbfd7a5;
 }
+
 input {
     color: #000000;
     width: 100%;
     margin: 5px;
     display: flex;
     flex-direction: column;
-    padding:6px;
+    padding: 6px;
 }
 
-input[type="text"], [type="email"] {
+input[type="text"],
+[type="email"] {
     border: solid #70bdd2;
     color: #000000;
-    width:55%;
+    width: 55%;
     margin: auto;
     align-items: center;
     box-sizing: border-box;
 }
+
 /* format for the submit button of the form */
 button {
     border: solid #70bdd2;
-    background-color:#4d77c6;
-    color:#ffffff;
+    background-color: #4d77c6;
+    color: #ffffff;
     display: inline-block;
     width: 55%;
     padding: 5px;
 }
+
 /* details of peer support groups */
- .container {
-     display: flex;
-     flex-direction: column;
- }
+.container {
+    display: flex;
+    flex-direction: column;
+}
 
- .cork {
-     flex: 0.5;
-     height: 300px;
-     background-color: #dfa2df;
-     border: solid #70bdd2;
-     padding: 1px 10px 10px;
-     display: block;
-     margin-right: 30px;
-     margin-left:30px;
-     margin-bottom: 10px;
-     border-radius: 15px;
-    
- }
+.cork {
+    flex: 0.5;
+    height: 300px;
+    background-color: #dfa2df;
+    border: solid #70bdd2;
+    padding: 1px 10px 10px;
+    display: block;
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+}
 
- .cork h3{
+.cork h3 {
     text-align: center;
     color: #ffffff;
- }
- .cork p{
+}
+
+.cork p {
     text-align: center;
     color: #182492;
     letter-spacing: 1px;
- }
+}
 
- .galway {
-     flex: 0.5;
-     height: 300px;
-     background-color: #b9a4e8;
-     border: solid #70bdd2;
-     padding: 1px 10px 10px;
-     display: block;
-     margin-right:30px;
-     margin-left:30px;
-     margin-bottom: 10px;
-    border-radius: 15px;  
- }
+.galway {
+    flex: 0.5;
+    height: 300px;
+    background-color: #b9a4e8;
+    border: solid #70bdd2;
+    padding: 1px 10px 10px;
+    display: block;
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+}
+
 .galway h3 {
     text-align: center;
     color: #ffffff;
@@ -309,113 +312,129 @@ button {
     letter-spacing: 1px;
 }
 
- .dublin {
-     flex: 0.5;
-     height: 300px;
-     background-color: #5cbaf4;
-     border: solid #70bdd2;
-     padding: 1px 10px 10px;
-     display: block;
-     margin-right:30px;
-     margin-left: 30px;
-     margin-bottom: 10px;
-     border-radius: 15px;
- }
+.dublin {
+    flex: 0.5;
+    height: 300px;
+    background-color: #5cbaf4;
+    border: solid #70bdd2;
+    padding: 1px 10px 10px;
+    display: block;
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+}
 
-.dublin h3{
+.dublin h3 {
     text-align: center;
     color: #ffffff;
 }
 
-.dublin p{
+.dublin p {
     text-align: center;
     color: #182492;
     letter-spacing: 1px;
 }
- /* Footer */
+
+/* Footer */
 #social-networks {
     text-align: center;
+    margin-top: 10px;
     padding: 20px 0;
     display: flex;
     justify-content: space-evenly;
     list-style-type: none;
     background-color: #70bdd2;
 }
+
 #social-networks i {
     font-size: 100%;
     padding: 5%;
 }
- /* Media Query for smaller devices (375px and below) */
-    @media (min-width: 375px) {
 
- /* Push main content down on smaller devices */
-    main {margin-top:30px;}
- }
-/* Media Query for tablet and iPad (768px and up) */
-    @media (min-width: 768px) {
-/* Push main content down on tablet and ipad screen */
+/* Media Query for smaller devices (375px and below) */
+@media (min-width: 375px) {
+
+    /* Push main content down on smaller devices */
     main {
-    margin-top: 92px;
+        margin-top: 30px;
     }
+}
+
+/* Media Query for tablet and iPad (768px and up) */
+@media (min-width: 767px) {
+
+    /* Push main content down on tablet and ipad screen */
+    main {
+        margin-top: 100px;
+    }
+
     #menu {
-    display: flex;
+        display: flex;
     }
+
     #menu>li {
-    font-size: 20px;
-    color: #fefcf5;
-    padding-left: 1rem;
+        font-size: 20px;
+        color: #fefcf5;
+        padding-left: 1rem;
     }
+
     nav {
-    display: block;
-    position: relative;
-    box-shadow: none;
-    width:fit-content
+        display: block;
+        position: relative;
+        box-shadow: none;
+        width: fit-content;
     }
+
     .nav-toggle-label {
-    display: none;
+        display: none;
     }
+
     #logo {
-    font-size: 155%;
-    line-height: 60px;
-    padding-bottom: 1rem;
-    padding-top: 1rem;
-    padding-left: 0.5rem;
+        font-size: 155%;
+        line-height: 60px;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+        padding-left: 0.5rem;
     }
 
-   /* Form */ 
-   #signup-form {
-    position: center;
-    padding-left: 4rem;
-    padding-right: 4rem; 
-    padding-bottom: 3rem;
-   }
- 
-   .container {
-    position: center;
-    padding-left: 4rem;
-    padding-right: 4rem;
-   }
-
- /* columns for advice section */
-   .three-column-grid{
-    display: grid;
-    grid-auto-rows: 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
+    /* Form */
+    #signup-form {
+        padding-left: 4rem;
+        padding-right: 4rem;
+        padding-bottom: 3rem;
     }
 
-   }
+    .container {
+        position: center;
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+    /* columns for advice section */
+    .three-column-grid {
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
 /* Media Query for laptop and desktop (992px and up) */
 @media (min-width: 992px) {
-/* Push main content down on laptop and desktop screen */
+
+    /* Push main content down on laptop and desktop screen */
     main {
-    margin-top: 101px;
+        margin-top: 101px;
     }
+
     #logo {
-    font-size: 200%;
+        font-size: 200%;
     }
+
     #menu a:hover {
-    border-bottom:1px solid #1c4e65;
+        border-bottom: 1px solid #1c4e65;
     }
+
     #menu>li {
         font-size: 30px;
     }
